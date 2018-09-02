@@ -1,0 +1,415 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link type="text/css" href="http://code.cloudcms.com/alpaca/1.5.24/bootstrap/alpaca.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <!-- moment -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- handlebars -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <!-- alpaca -->
+    <script type="text/javascript" src="https://code.cloudcms.com/alpaca/1.5.24/bootstrap/alpaca.min.js"></script>
+    <!-- jquery ui -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <!-- Required for jQuery UI DateTimePicker control -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css"
+        rel="stylesheet">
+    <!-- Required for inputmask -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <!-- inputmask2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.numeric.extensions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.date.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.phone.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/jquery.inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/phone-codes/phone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/phone-codes/phone-be.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/phone-codes/phone-ru.min.js"></script>
+    <!-- Beautify used by EditorField -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify-css.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.7.5/beautify-html.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- typeahead.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.min.js" type="text/javascript"></script>
+    <!-- ckeditor for the ckeditor field -->
+    <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js" type="text/javascript"></script>
+    <!-- bootstrap datetimepicker for date, time and datetime controls -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <!-- bootstrap-multiselect for time field -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css">
+
+    <!-- jQuery Price Format for currency field -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-price-format/2.2.0/jquery.priceformat.min.js"></script>
+    <!-- START - Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-74723052-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- END - Google Analytics -->
+    <!-- pretty print -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+</head>
+
+<body id="body">
+    <div class="container">
+        <nav class="navbar nabar-dark bg-dark">
+            <span class="navbar-brand mb-0 text-white"><strong>SALE REMINDER</strong></span>
+            <div class="navbar float-right">
+                <a class="nav-ulnk  text-white" href="../followups">FOLLOWUP</a>
+                <a class="nav-link  text-white" href="../customers">CUSTOMER</a>
+                <a class="nav-ulnk  text-white" href="../logout">LOGOUT</a>
+            </div>
+        </nav>
+        <div class="row mt-2 mb-2">
+            <div class="flex col-6">
+                <div class="card text-dark bg-warning mb-3 new_card">
+                    <form id="customerForm" class="col-12"></form>
+                </div>
+            </div>
+
+            <div class="flex col-6">
+                <div class="card text-dark bg-warning mb-3 new_card">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="form-inline float-right mt-2">
+                                <input id="addressSearch" type="text"><button id="editAddress">Edit Address</button>
+                                <select id="customerFilter" class="form-control">
+                                    <option value="1">Show 5 customers</option>
+                                    <option value="2">Show 10 customers</option>
+                                    <option value="3">Show All Customers</option>
+                                    <option value="4">Show Uninterested Customers</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <div id="customerTable"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#customerFilter").change(function () {
+                    $.get('/api/customers?id=' + $(this).val(), function (data) {
+                        console.log(data);
+                        console.log($(this));
+                        $("#customerTable").tabulator("setData", data);
+                    })
+                });
+            });
+        </script>
+
+        <script id="placesFunctions">
+            var address;
+            var scripttag = `<script id= "places" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMehvoOLcod3Fi1YS6c-inhIu1fZXVAy0&libraries=places&callback=initAutocomplete" async defer><\/script>`
+            var placeSearch, autocomplete, autocompletes = [];
+            var componentForm = {
+                street_number: "short_name",
+                route: "long_name",
+                locality: "long_name",
+                administrative_area_level_1: "short_name",
+                country: "long_name",
+                postal_code: "short_name"
+            };
+
+            function initAutocomplete() {
+                // Create the autocomplete object, restricting the search to geographical
+                // location types. /** @type {!HTMLInputElement} */
+
+                ['alpaca5', 'addressSearch'].forEach(function (input) {
+                    var autocomplete = new google.maps.places.Autocomplete(document.getElementById(input), { types: ["geocode", "establishment"] });
+                    autocomplete.addListener('place_changed', fillInAddress);
+                    autocompletes.push(autocomplete);
+                })
+
+                //autocomplete = new google.maps.places.Autocomplete(
+                //    (document.getElementById("alpaca5")),
+                //    { types: ["geocode", "establishment"] }
+                //);
+
+                // When the user selects an address from the dropdown, populate the address
+                // fields in the form.
+                //autocomplete.addListener("place_changed", fillInAddress);
+            }
+
+            function fillInAddress() {
+                // Get the place details from the autocomplete object.
+                //var place = autocomplete.getPlace();
+                var place = this.getPlace();
+                // Get each component of the address from the place details
+                // and fill the corresponding field on the form.
+                for (var i = 0; i < place.address_components.length; i++) {
+                    var addressType = place.address_components[i].types[0];
+                    if (componentForm[addressType]) {
+                        var val = place.address_components[i][componentForm[addressType]];
+                        // document.getElementById(addressType).value = val;
+                    }
+                }
+            }
+
+            // Bias the autocomplete object to the user's geographical location,
+            // as supplied by the browser's 'navigator.geolocation' object.
+            function geolocate() {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'json',
+                    url: 'http://api.ipstack.com/174.63.176.143?access_key=b0f2e63ee5198c9ba287d91c15262e11',
+                    success: function (res) {
+                        var geolocation = {
+                            lat: res['latitude'],
+                            lng: res['longitude']
+                        };
+                        var circle = new google.maps.Circle({
+                            center: geolocation,
+                            radius: 10
+                        });
+                        autocomplete.setBounds(circle.getBounds());
+                    }
+                });
+            }
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $("#customerForm").alpaca({
+                    "schema": {
+                        "title": "New Customer",
+                        "type": "object",
+                        "properties": {
+                            "firstname": {
+                                "type": "string",
+                                "title": "Firstname",
+                                "minLength": 2
+                            },
+                            "lastname": {
+                                "type": "string",
+                                "title": "Lastname",
+                                "minLength": 2
+                            },
+                            "address": {
+                                "type": "string",
+                                "title": "Address",
+                            },
+                            "phone": {
+                                "type": "string",
+                                "title": "Phone",
+                                "format": "phone",
+                            },
+                            "email": {
+                                "type": "string",
+                                "title": "Email",
+                                "format": "email",
+                            }
+                        }
+                    },
+                    "options": {
+                        "form": {
+                            "attributes": {
+                                "action": "/api/customer",
+                                "method": "post"
+                            },
+                            "fields": {
+                                "firstname": {
+                                    "validator": function (callback) {
+                                        var value = this.getValue();
+                                        if (value = "") {
+                                            callback({
+                                                "status": false,
+                                                "message": "Please enter Firstname"
+                                            });
+                                        } else {
+                                            callback({
+                                                "status": true
+                                            });
+                                        }
+                                    }
+                                },
+                                "lastname": {
+                                    "validator": function (callback) {
+                                        var value = this.getValue();
+                                        if (value = "") {
+                                            callback({
+                                                "status": false,
+                                                "message": "Please enter Lastname"
+                                            });
+                                        } else {
+                                            callback({
+                                                "status": true
+                                            });
+                                        }
+                                    }
+                                },
+                                "phone": {
+                                    "maskString": "999-999-9999",
+                                    "validator": function (callback) {
+                                        var value = this.getValue();
+                                        if (value = "") {
+                                            callback({
+                                                "status": false,
+                                                "message": "Please enter Firstname"
+                                            });
+                                        } else {
+                                            callback({
+                                                "status": true
+                                            });
+                                        }
+                                    }
+                                }
+                            },
+
+                            "buttons": {
+                                "submit": {
+                                    "type": "button",
+                                    "click": function () {
+                                        console.log(this.getValue());
+                                        var editPhone = this.getValue();
+                                        editPhone.phone = [editPhone.phone.slice(0, 3), "-", editPhone.phone.slice(3, 6), "-", editPhone.phone.slice(6, 10)].join("");
+                                        console.log(editPhone);
+                                        $.post('/api/customer', editPhone, function (data) {
+                                            $("#customerTable").tabulator("addRow", data, true, 0);
+                                            console.log(data);
+                                            $("#customerForm").alpaca("get").childrenByPropertyId["firstname"].setValue("");
+                                            $("#customerForm").alpaca("get").childrenByPropertyId["lastname"].setValue("");
+                                            $("#customerForm").alpaca("get").childrenByPropertyId["phone"].setValue("");
+                                            $("#customerForm").alpaca("get").childrenByPropertyId["address"].setValue("");
+                                            $("#customerForm").alpaca("get").childrenByPropertyId["email"].setValue("");
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "view": "bootstrap-edit",
+                    "postRender": function (control) {
+                        // append to body the script tag after form was rendered
+                        $("#body").append(scripttag);
+                    }
+                });
+
+
+                ///script for creating tabulator goes here
+                $("#customerTable").tabulator({
+                    height: "311px",
+                    layout: "fitDataFill",
+                    rowClick: function (e, row) {
+                        console.log(row.getIndex());
+                        $("#addressSearch").prop("disabled", false);
+                        $('#addressSearch').attr('row', row.getIndex());
+                        //console.log(cell.cell.row.getData());
+                        $("#addressSearch").val(row.getData().address);
+                        $("#editAddress").on('click', function () {
+                            $("#customerTable").tabulator("updateRow", $("#addressSearch").attr("row"), { address: $("#addressSearch").val() });
+                        });
+                    },
+                    rowUpdated: function (row) {
+                        //row - row component
+                        // call http action and method here 
+                        $.ajax({
+                            method: 'PUT',
+                            data: JSON.stringify({
+                                columnName: 'address',
+                                columnValue: row.getData().address
+                            }),
+                            url: "".concat("/api/customer?id=", row.getData().id),
+                            contentType: "application/json; charset=utf-8"
+                        })
+                    },
+                    columns: [
+                        { title: "ID", field: "id", editor: "input", visible: false },
+                        { title: "Firstname", field: "firstname", editor: "input" },
+                        { title: "Lastname", field: "lastname", editor: "input" },
+                        {
+                            title: "Phone", field: "phone", editor: function (cell, onRendered, success, cancel) {
+                                var editor = $("<input class='tel' type='tel' data-inputmask-clearmaskonlostfocus='false'>");
+                                editor.css({
+                                    "padding": "3px",
+                                    "width": "100%",
+                                    "box-sizing": "border-box",
+                                });
+                                editor.val(cell.getValue());
+                                onRendered(function () {
+                                    editor.focus();
+                                    editor.css("height", "100%");
+                                });
+
+                                editor.on("change blur", function (e) {
+                                    success(editor.val());
+                                });
+                                editor.inputmask({
+                                    mask: "999-999-9999", greedy: false, definitions: {
+                                        '0': {
+                                            validator: "^\d{3}-\d{3}-\d{4}$"
+                                        }
+                                    },
+                                    "clearIncomplete": true
+                                });
+                                return editor;
+                            }
+                        },
+                        { title: "Email", field: "email", editor: "input" },
+                        {
+                            title: "Address", field: "address", editor: false, visible: true,
+                            cellClick: function (e, cell) {
+                                ///console.log(cell.getValue());
+
+                            }
+                        },
+                        { title: "Interested", field: 'interested', editor: "tick", formatter: "tickCross" }
+                    ],
+                    cellEdited: function (cell) {
+                        //This callback is called any time a cell is edidted
+                        console.log(Object.keys(cell.cell));
+                        console.log(cell.cell);
+                        console.log("Customer ID of the edited row" + cell.cell.row.data.id);
+                        console.log("Column being edited " + cell.cell.column.field)
+                        console.log("Old Value: " + cell.cell.oldValue);
+                        console.log("New Value: " + cell.cell.value);
+
+                        // call http action and method here 
+                        $.ajax({
+                            method: 'PUT',
+                            data: JSON.stringify({
+                                columnName: cell.cell.column.field,
+                                columnValue: cell.cell.value
+                            }),
+                            url: "".concat("/api/customer?id=", cell.cell.row.data.id),
+                            contentType: "application/json; charset=utf-8"
+                        })
+
+                    },
+                    ajaxURL: "/api/customers", //ajax URL
+                    ajaxConfig: "GET", //ajax HTTP request type
+                });
+
+                $("#customerTable").tabulator("setData", "/api/customers?id=1");
+            });
+
+        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.5.3/css/tabulator.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/3.5.3/js/tabulator.min.js"></script>
+</body>
