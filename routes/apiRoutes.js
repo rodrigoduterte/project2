@@ -1,5 +1,5 @@
 var db = require("../models");
-var reports = require("../config/reports");
+// var reports = require("../config/reports");
 
 module.exports = function(app) {
   app.get("/api/cb/customers", function(req, res) {
